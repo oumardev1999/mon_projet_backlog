@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello RegistrationController!{% endblock %}
+
+{% block body %}
+<tbody>
+				{% for partenaires in partenaires %}
+			  <tr>
+					<td> {{partenaires.statusEntreprise}}</td>
+					<td>{{partenaires.isperson}}</td>
+          <td> {{partenaires.idpersonne}}</td>
+				{% endfor %}
+			</tbody>
+{% endblock %}
+
+
+
+
+
+
+
+     

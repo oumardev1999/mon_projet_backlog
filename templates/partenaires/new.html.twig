@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New Partenaires{% endblock %}
+
+{% block body %}
+    <div class="container mt-5  py-5 class="bg-image" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWtCkuNU-2doMCSS2IMk7tB2t-EQ8IIXQjKg&usqp=CAU')">
+ <div class="card">
+ <div class="card-header text-danger text-center">
+ <h1>Create new Partenaires</h1>
+ </div>
+  <div class="card-body">
+    {{ include('partenaires/_form.html.twig') }}
+
+    <a href="{{ path('app_partenaires_index') }}">back to list</a>
+  </div>
+</div>
+</div>
+{% endblock %}
+
+
